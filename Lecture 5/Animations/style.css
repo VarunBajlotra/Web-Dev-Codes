@@ -1,0 +1,42 @@
+.wrap{
+    height: 100px;
+    width: 900px;
+    margin: auto;
+    border: 5px solid orangered;
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    background-color: purple;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+/* @keyframes slide{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+} */
+
+@keyframes slide{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+    50%{
+        width: 50%;
+    }
+    60%{
+        width: 30%;
+    }
+    70%{
+        width: 90%;
+    }
+}

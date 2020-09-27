@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id="myDiv"></div>
+    <input id="inp" type="text">
+    <ul id="list">
+        <li></li>
+    </ul>
+    <script>
+        document.body.append('Hello there');
+        let inp = document.getElementById('inp');
+        console.log(inp.value);
+        console.log(typeof inp.value);
+        let myDiv = document.getElementById('myDiv');
+        console.log(myDiv);
+        myDiv.innerHTML = 'Hi there';
+
+        let list = document.getElementById('list');
+        let li = document.createElement('li');
+        li.innerText = 'This is li';
+        list.appendChild(li);
+        
+    </script>
+</body>
+</html>

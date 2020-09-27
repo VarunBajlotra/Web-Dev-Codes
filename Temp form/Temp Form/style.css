@@ -1,0 +1,26 @@
+.input .floating-label {
+	position: absolute;
+    pointer-events: none;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+	top: 8px;
+	left: 13px;
+	transition: 0.2s ease all;
+}
+.input input:focus ~ .floating-label,
+.input input:not(:focus):valid ~ .floating-label{
+	top: -10px;
+	left: 10px;
+	font-size: 13px;
+}
+
+body{
+	background-image: url('abstract-1780185__340.webp');
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* display: flex; */
+	background-position: fixed;
+	/* background-color:lightgrey; */
+}
+

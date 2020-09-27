@@ -1,0 +1,108 @@
+﻿$(function () {
+    $("ul.level1 li").hover(function () {
+        var timeout = $(this).data("timeout");
+        if (timeout) clearTimeout(timeout);
+        var currHolder = $(this).find(".holder").attr("id");
+        $(".holder").each(function (i, value) {
+            if ($(value).attr("id") != currHolder) {
+                var holder = $(value).attr("id");                
+            }
+        }
+            );
+
+        $(this).find(".holder").css('left', '0px');
+        $(this).find(".holder").show();
+    }, function () {
+        $(this).data("timeout", setTimeout($.proxy(function () {
+            $(this).find(".holder").fadeOut('slow');
+        }, this), 1000));
+    });
+
+    $(document).click(function () {
+        //$('.holder:visible').hide();
+
+    });
+
+
+});
+
+    
+
+
+
+function DisplaySubmenu() {
+    // var subMenu = document.getElementById('subMenu');
+    var subMenu1 = document.getElementById('subMenu1');
+    if (subMenu1.style.display == "none") {
+        //      subMenu.style.display = "block";
+        subMenu1.style.display = "block";
+    }
+    else {
+        //       subMenu.style.display = "none";
+        subMenu1.style.display = "none";
+    }
+
+
+    var subMenu2 = document.getElementById('subMenu2');
+    if (subMenu2.style.display == "none") {
+        //      subMenu.style.display = "block";
+        subMenu2.style.display = "block";
+    }
+    else {
+        //       subMenu.style.display = "none";
+        subMenu2.style.display = "none";
+    }
+
+    return false;
+}
+function Displaylike() {
+    // var subMenu = document.getElementById('subMenu');
+    var like = document.getElementById('like');
+    var follow = document.getElementById('follow');
+    var tube = document.getElementById('tube');
+    if (like.style.display == "none") {
+        tube.style.display = "none";
+        follow.style.display = "none";
+        //      subMenu.style.display = "block";
+        like.style.display = "block";
+    }
+    else {
+        //       subMenu.style.display = "none";
+        like.style.display = "none";
+    }
+    return false;
+}
+function Displayfollow() {
+    var like = document.getElementById('like');
+    // var subMenu = document.getElementById('subMenu');
+    var follow = document.getElementById('follow');
+    var tube = document.getElementById('tube');
+    if (follow.style.display == "none") {
+        tube.style.display = "none";
+        like.style.display = "none";
+        //      subMenu.style.display = "block";
+        follow.style.display = "block";
+    }
+    else {
+        //       subMenu.style.display = "none";
+        follow.style.display = "none";
+    }
+    return false;
+}
+function Displaytube() {
+    var like = document.getElementById('like');
+    // var subMenu = document.getElementById('subMenu');
+    var follow = document.getElementById('follow');
+    var tube = document.getElementById('tube');
+    if (tube.style.display == "none") {
+        like.style.display = "none";
+        //      subMenu.style.display = "block";
+        follow.style.display = "none";
+        tube.style.display = "block";
+    }
+    else {
+        //       subMenu.style.display = "none";
+        tube.style.display = "none";
+    }
+    return false;
+}

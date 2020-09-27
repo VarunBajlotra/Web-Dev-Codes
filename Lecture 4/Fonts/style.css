@@ -1,0 +1,18 @@
+#para1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+#para2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-weight: 800;
+    font-size: 20px;
+    font-variant: small-caps;
+    line-height: 3;
+}
+
+#para3{
+    font: italic bold 24px/2 Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 1px 1px 5px goldenrod,-5px -3px 4px red;
+}

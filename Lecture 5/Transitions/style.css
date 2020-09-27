@@ -1,0 +1,38 @@
+/* .wrap{
+    height: 200px;
+    width: 150px;
+    background-color: gold;
+    transition-property: all;
+    transition-duration: 1s;
+    /* transition-delay: 1s;
+} */
+
+body{
+    padding: 100px;
+}
+
+.vegeta{
+    height: 70px;
+    padding: 60px 40px;
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+/* .wrap:hover{
+    height: 400px;
+    width: 300px;
+    background-color: purple;
+    transition-property: all;
+    transition-duration: 3s;
+} */
+
+.wrap:hover .vegeta{
+    transform: translateX(40px) rotateZ(45deg) scale(2);
+    /* transform: skewX(45deg); */
+    /* transform: rotateZ(45deg); */
+    /* transform: scale(2); */
+}
+
+/* .wrap:hover .vegeta{
+    transform: scale(2) translate(100px,200px) rotate(2turn);
+} */

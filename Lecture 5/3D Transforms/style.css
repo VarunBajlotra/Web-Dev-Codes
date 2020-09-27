@@ -1,0 +1,39 @@
+body{
+    perspective: 800px;
+    perspective-origin: 50% 50%;
+}
+
+.wrap{
+    height: 400px;
+    width: 300px;
+    background-color: blueviolet;
+    margin: auto;
+    /* background: orange; */
+    /* transform: transform; */
+    transition-duration: 2s;
+    /* transform-style: preserve-3d; */
+    transform: rotateY(360deg) ;
+}
+
+/* .wrap div{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front-side{
+    background: gold url('Vegeta.jpeg') no-repeat center;
+    z-index: 100;
+}
+
+.back-side{
+    background: aqua;
+    transform: rotateY(180deg);
+} */
+
+/* .wrap:hover{
+    transform: translateX(-200px) rotateY(360deg) ;
+    transform: translateX(-200px) rotateY(180deg);
+    
+} */

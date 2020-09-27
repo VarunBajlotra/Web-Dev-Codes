@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <form>
+            <!-- Payment and Other Details Start -->
+            <h5 class="text-primary">Payment, Batch and Other Details</h5>
+            <br>
+            <div class="form-row ml-5">
+                <h6 class="text-primary">Which type of schedule of the course will you prefer (we will consider this but the final decision will be made based on your profile)*</h6>
+            </div>
+            <div class="form-row ml-5">
+                <div class="col-md-12 form-group">
+                    <select id="schedule" class="form-control" required>
+                        <option selected hidden>Select One*</option>
+                        <option>Full Time (Mon-Fri) -- 10am to 6pm</option>
+                        <option>Weekend - (Sat-Sunday) -- 10 am to 6 pm [You will be doing some assignments during weekdays also]</option>
+                        <option>I can make myself available for either of the schedules (Weekends or Weekdays)</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="form-row ml-5">
+                <h6 class="text-primary">Select a batch*</h6>
+            </div>
+            <div class="form-row ml-5">
+                <div class="col-md-12 form-group">
+                    <select id="batch" class="form-control" required>
+                        <option selected hidden>Select One*</option>
+                        <option>January 2020</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="form-row ml-5">
+                <h6 class="text-primary">Payment Plan*</h6>
+            </div>
+            <div class="form-row ml-5">
+                <div class="col-md-12 form-group">
+                    <select id="paymentplan" class="form-control xyz" required>
+                        <option selected hidden>Select One*</option>
+                        <option>Standard (50k Upfront + 7.5 of Salary for upto 2 years)</option>
+                        <option>Hack (No upfront + 15% of Salary for upto 2 years)</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="form-row ml-5">
+                <h6 class="text-primary">Are you enrolled anywhere else under an Income Sharing Agreement?*</h6>
+            </div>
+            <div class="form-row ml-5">
+                <div class="col-md-2 radio">
+                    <label><input type="radio" name="ISA" required>Yes</label>
+                </div>
+                <div class="col-md-2 radio">
+                    <label><input type="radio" name="ISA" required>No</label>
+                </div>
+            </div>
+            <br>
+            <div class="form-row ml-5">
+                <h6 class="text-primary">Will you be ready and available to join the job on full time basis on completion of the course, i.e. 6 months from the start of the batch?*</h6>
+            </div>
+            <div class="form-row ml-5">
+                <div class="col-md-2 radio">
+                    <label><input type="radio" name="available" required>Yes</label>
+                </div>
+                <div class="col-md-2 radio">
+                    <label><input type="radio" name="available" required>No</label>
+                </div>
+            </div>
+            <br>
+            <div class="row-form ml-5">
+                <h5 class="text-primary">General terms*</h5>
+            </div>
+            <div class="row-form ml-5">
+                <div class="checkbox">
+                    <label><input type="checkbox" required>I agree to honour my selected payment terms with Coding Ninjas</label>
+                </div>
+            </div>
+            <div class="row-form ml-5">
+                <div class="checkbox">
+                    <label><input type="checkbox" required>All the information above is true and as per the best of my knowledge</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary col-md-1 offset-11">Submit</button>
+            <!-- Payment and Other Details End -->
+        </form>
+    </div>
+</body>
+</html>

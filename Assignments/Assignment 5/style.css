@@ -1,0 +1,43 @@
+body{
+    margin: auto;
+    width: 50%;
+    background-color: rgb(31, 218, 46);
+}
+
+#photo{
+    float:right;
+    border: 1px solid;
+}
+
+#Name{
+    float:left;
+}
+
+h1,h2{
+    text-shadow: 2px 2px 5px rgb(86, 6, 190);
+}
+
+#table{
+    float: left;
+}
+
+#Profile{
+    width: 50%;
+    margin-top: 5px;
+    float: right;
+}
+
+.wrap::after{
+    content: " ";
+    clear: right;
+    display: table;
+}
+
+#Media{
+    display: flex;
+    justify-content: space-around;
+}
+
+.image{
+    height: 50px;
+}

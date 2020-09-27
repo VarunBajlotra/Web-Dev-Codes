@@ -1,0 +1,17 @@
+.box{
+    font-size: 40px;
+    border: 2px solid black;
+    background-image: url('abc.png'),url('Vegeta.jpeg');
+    /* background-image: url('Vegeta.jpeg'); */
+    color: black;
+    font-weight: 900;
+    height: 500px;
+    overflow: scroll;
+    background-repeat: no-repeat;
+    /* background-position: 100px 200px; */
+    /* background: url('Vegeta.jpeg') black no-repeat 20px 30px local;
+    background: url('abc.png'); */
+    background-attachment: local;
+    background-color: blue;
+    background-size: contain;
+}

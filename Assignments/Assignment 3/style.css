@@ -1,0 +1,12 @@
+body{
+    background-color: aqua;
+}
+
+.head{
+    border: 2px solid black;
+    text-align: center;
+    display: block;
+    background-color: blue;
+    position: sticky;
+    top: 0px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="inp" type="text">
+    <button id="btn" onclick="printloop();">ADD</button>
+
+    <ul id="list">
+
+    </ul>
+
+    <script>
+        
+        function printloop(){
+            let inp = document.getElementById('inp');
+            let N = parseInt(inp.value);
+            let list = document.getElementById('list');
+            let btn = document.getElementById('btn');
+            let x = '';
+
+            for(let i=0;i<N;i++){
+                let str = '';
+                if(i%3==0){
+                    str += 'Fizz';
+                }
+                if(i%5==0){
+                    str += 'Buzz';
+                }
+                if(str == ''){
+                    str = i;
+                }
+                // list.innerHTML += '<li>'+str+'</li>';
+                // x += `<li>${str}</li>`;
+                let li = document.createElement('li');
+                li.innerText = str;
+                list.appendChild(li);
+            }
+            // list.innerHTML += `<li>${x}</li>`;
+        }
+    </script>
+</body>
+</html>

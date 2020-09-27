@@ -1,0 +1,19 @@
+body{
+    background-image: url(images\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 15%;
+    color: rgb(14, 1, 17);
+}
+
+#div{
+    text-align: center;
+}
+
+#hidden{
+    text-align: center;
+}
+

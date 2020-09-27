@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form>
+        Name : <input type="text" name="username" placeholder="Username">
+        <br>
+        Password : <input type="password" name="password" placeholder="Password">
+        <br>
+        Date : <input type="date" name="date" placeholder="Date">
+        <br>
+        Email : <input type="email" name="email" placeholder="Email">
+        <br>
+        Mobile No. : <input type="tel" name="tel" placeholder="Number">
+        <br>
+        Color : <input type="color"><br>
+        <input type="radio" name="test">A<br>
+        <input type="radio" name="test">B<br>
+        <input type="radio" name="test">C<br>
+        <input type="radio" name="test1">D<br>
+        <input type="radio" name="test1">E<br>
+        <input type="checkbox" name="test2">F<br>
+        <input type="checkbox" name="test2">G<br>
+        <input type="file">
+    </form> -->
+
+    <form action="#" method="POST">  <!-- "POST" or "GET" -->
+        <fieldset>
+            <legend align="center">Important Questions</legend>
+            <label for="username">Username : </label>
+            <input type="text" name="username" placeholder="Username" id="username" required><br>
+            <label for="password">Password : </label>
+            <input type="password" name="password" placeholder="password" id="password" required><br>
+            Gender : 
+            <input type="radio" name="Gender" id="male"> 
+            <label for="male">Male</label>
+            <input type="radio" name="Gender" id="female">
+            <label for="female">Female</label>
+            
+            <br>
+            <select>
+                <!-- <option disabled selected>Continents</option> -->
+                <option>Asia</option>
+                <option>Europe</option>
+                <option selected>Africa</option>
+                <option>Antarctica</option>
+                <option>North America</option>
+                <option>South America</option>
+                <option>Australia</option>
+            </select><br>
+            <select>
+
+                <optgroup label="Hollywood">
+                    <option>Avengers</option>
+                    <option>Hulk</option>
+                </optgroup>
+                <optgroup label="South Indian">
+                    <option>Bahubali</option>
+                </optgroup>
+                <optgroup label="Bollywood">
+                    <option>3 Idiots</option>
+                    <option>PK</option>
+                </optgroup>
+            </select><br>
+        </fieldset>
+
+        <fieldset>
+            <legend align="center">Optional Questions</legend>
+            <textarea rows="10" cols="30"></textarea>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Submit!">
+    </form>
+</body>
+</html>
