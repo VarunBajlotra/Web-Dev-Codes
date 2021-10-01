@@ -9,13 +9,13 @@
 function Person(name,age){
     // this.age=age;
     this.name=name;
-    this.getFirstName = function(){
+    this.getFirstName = ()=>{
         return this.name.split(' ')[0];
     }
-    this.isAdult = function(){
+    this.isAdult = ()=>{
         return age>=18;
     }
-    this.updateFirstName = function(firstName){
+    this.updateFirstName = (firstName)=>{
         let temp = this.name.split(' ');
         temp[0]=firstName;
         this.name = temp.join(' ');
@@ -29,7 +29,7 @@ Person.staticFun = Person.prototype.staticFun = function(){
 let p = new Person('Harry Potter',18);
 let p1 = new Person('Ron Weasley',17);
 
-function f(){
+let f = ()=>{
     console.log(this);
 }
 
